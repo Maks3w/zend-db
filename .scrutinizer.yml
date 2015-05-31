@@ -1,6 +1,2 @@
-build_failure_conditions:
-  # Code Coverage decreased from previous inspection by more than 1%
-  - 'project.metric_change("scrutinizer.test_coverage", < -0.01)'
-
 tools:
   external_code_coverage: true
