@@ -511,6 +511,7 @@ abstract class AbstractTableGateway implements TableGatewayInterface
         $this->resultSetPrototype = (isset($this->resultSetPrototype)) ? clone $this->resultSetPrototype : null;
         $this->sql = clone $this->sql;
         if (is_object($this->table)) {
+            $foo = 'foo';
             $this->table = clone $this->table;
         } elseif (
             is_array($this->table)
@@ -521,5 +522,7 @@ abstract class AbstractTableGateway implements TableGatewayInterface
                 $tableObject = clone $tableObject;
             }
         }
+
+		echo $foo;
     }
 }
