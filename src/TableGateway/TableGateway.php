@@ -40,7 +40,7 @@ class TableGateway extends AbstractTableGateway
         $this->adapter = $adapter;
 
         // process features
-        if ($features !== null) {
+        if ($features != null) {
             if ($features instanceof Feature\AbstractFeature) {
                 $features = array($features);
             }
